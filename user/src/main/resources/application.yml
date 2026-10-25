@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: user-service
+  mongodb:
+    uri: mongodb://localhost:27017/userdb
+  data:
+    mongodb:
+      database: userdb
+
+logging:
+  level:
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+
+server:
+  port: 8082
